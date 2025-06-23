@@ -1,0 +1,90 @@
+.c-heading {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Hiragino Mincho ProN", "游明朝体", "Yu Mincho", YuMincho, serif;
+
+
+    &--h1 {
+        font-size: 6.4vw;
+        line-height: 140%;
+        font-feature-settings: 'palt' on;
+    }
+
+
+    &--h2 {
+        font-size: 5.33vw;
+        font-feature-settings: 'palt' on;
+    }
+
+
+    &.SP-left {
+        text-align: left;
+    }
+
+
+    &.SP-right {
+        text-align: right;
+    }
+}
+
+
+@media screen and (min-width:501px) {
+    .c-heading {
+
+
+        &--h1 {
+            font-size: 32px;
+        }
+
+
+        &--h2 {
+            font-size: 26.5px;
+        }
+    }
+}
+
+
+@media screen and (min-width:851px) {
+    .c-heading {
+
+
+        &--h1 {
+            font-size: 2.66vw;
+
+
+        }
+
+
+        &--h2 {
+            font-size: 2vw;
+        }
+
+
+        &.PC-left {
+            text-align: left;
+        }
+
+
+        &.PC-right {
+            text-align: right;
+        }
+    }
+}
+
+
+@media screen and (min-width:1201px) {
+    .c-heading {
+
+
+        &--h1 {
+            font-size: 32px;
+
+
+        }
+
+
+        &--h2 {
+            font-size: 24px;
+        }
+    }
+}

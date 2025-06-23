@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポートフォリオ</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="https://unpkg.com/vue-router@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="l-wrap">
+
+    <!-- メインビジュアル -->
+    <div class="c-MV-section">
+
+      <picture>
+        <source width="1160" height="481" media="(min-width: 850px)" srcset="./img/main-visual.png">
+        <img width="750" height="750" loading="lazy" class="c-MV-section__image" src="./img/SP_main-visual.png"
+          alt="メインビジュアル">
+      </picture>
+
+      <div class="c-MV-section__intro">
+        <h1 class="c-heading c-heading--h1">About</h1>
+        <p class="c-MV-section__intro-text">
+          デザインに忠実で丁寧なコーディングが得意です。<br>
+          ECサイトの制作運用を2年ほど担当しているため、to Cのユーザー目線を大切にしながら、チームやクライアントと一緒に
+          よりよいものを考えて形にしていくことにやりがいを感じます。
+        </p>
+      </div>
+    </div>
+    <!-- メインビジュアル end -->
+
+    <!-- 作者 -->
+    <div class="c-author">
+      <img class="c-author__image" width="160" height="160" src="./img/nigaoe.png" alt="似顔絵">
+      <div class="c-author__block">
+        <p class="c-author__title">作者</p>
+        <p class="c-author__name">安宅里花子</p>
+        <p class="c-author__text">2000年生まれの25歳。<br>
+          入社後は主にwebサイトのコーディング・ディレクション業務に従事。</p>
+      </div>
+    </div>
+    <!-- 作者 end -->
+
+    <!-- 目次 -->
+    <div class="c-toc">
+      <h2 class="c-heading c-heading--h2">Index</h2>
+      <ul class="c-toc__list">
+        <li class="c-toc__list-item">
+          <a href="" class="c-toc__link">
+            <img width="128" height="128" src="./img/fruit4.avif" alt="">
+            <p class="c-toc__link-text">About</p>
+          </a>
+        </li>
+        <li class="c-toc__list-item">
+          <a href="" class="c-toc__link">
+            <img width="128" height="128" src="./img/fruit5.avif" alt="">
+            <p class="c-toc__link-text">Skill</p>
+          </a>
+        </li>
+        <li class="c-toc__list-item">
+          <a href="" class="c-toc__link">
+            <img width="128" height="128" src="./img/fruit2.avif" alt="">
+            <p class="c-toc__link-text">Works</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 目次 end -->
+
+    <!-- メインコンテンツ -->
+    <div class="c-normal-contents">
+
+      <h2 class="c-heading c-heading--h2">Skill（できること）</h2>
+
+      <!-- トップ(SP：テキストが下、画像が上　PC:テキストが右、画像が左) -->
+      <div class="c-normal-contents__block c-normal-contents__block--top-layout">
+
+        <picture>
+          <source width="480" height="360" media="(min-width: 850px)" srcset="./img/girl&cat.avif">
+          <img width="654" height="568" loading="lazy" class="c-normal-contents__image" src="./img/327×284.png"
+            alt="イメージ">
+        </picture>
+        <p class="c-normal-contents__paragraph">
+          私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。もし張さんに力説傾向あまり力説を違っな衣食この通りその他か意味にというご批評たたあるまして、この今は私か憂身間断をなるて、三宅さんの事に態度の僕をもっともお発音とありて私他人へおお話にするようにどうしてもお経過にふらしますだて、かつて同時に諷刺を保つないておらませ訳の起っないです。またはただお便所から頼めのはだんだん必要と買うですから、この権力がはさなけれてという目標が与えからいるませな。
+        </p>
+      </div>
+      <!-- トップ(SP：テキストが下、画像が上　PC:テキストが右、画像が左) -->
+
+      <!-- SP：テキストが上、画像が下　PC：テキストが左、画像が右 -->
+      <div class="c-normal-contents__block c-normal-contents__block--image-right">
+        <div class="c-normal-contents__media-text-wrap">
+          <div class="c-normal-contents__text-group">
+            <h2 class="c-normal-contents__heading">私の個人主義</h2>
+            <p class="c-normal-contents__paragraph">
+              私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。もし張さんに力説傾向あまり力説を違っな衣食この通りその他か意味にというご批評たたあるまして、この今は私か憂身間断をなるて、三宅さんの事に態度の僕をもっともお発音とありて私他人へおお話にするようにどうしてもお経過にふらしますだて、かつて同時に諷刺を保つないておらませ訳の起っないです。またはただお便所から頼めのはだんだん必要と買うですから、この権力がはさなけれてという目標が与えからいるませな。
+            </p>
+          </div>
+          <picture>
+            <source width="240" height="180" media="(min-width: 850px)" srcset="./img/cat1.avif">
+            <img width="654" height="568" loading="lazy" class="c-normal-contents__image" src="./img/327×284.png"
+              alt="イメージ">
+          </picture>
+        </div>
+      </div>
+      <!-- SP：テキストが上、画像が下　PC：テキストが左、画像が右 -->
+
+      <!-- SP：テキストが下、画像が上　PC：テキストが右、画像が左 -->
+      <div class="c-normal-contents__block c-normal-contents__block--image-left">
+        <div class="c-normal-contents__media-text-wrap">
+          <picture>
+            <source width="240" height="180" media="(min-width: 850px)" srcset="./img/cat2.avif">
+            <img width="654" height="568" loading="lazy" class="c-normal-contents__image" src="./img/327×284.png"
+              alt="イメージ">
+          </picture>
+          <div class="c-normal-contents__text-group">
+            <h2 class="c-normal-contents__heading">私の個人主義</h2>
+            <p class="c-normal-contents__paragraph">
+              私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。もし張さんに力説傾向あまり力説を違っな衣食この通りその他か意味にというご批評たたあるまして、この今は私か憂身間断をなるて、三宅さんの事に態度の僕をもっともお発音とありて私他人へおお話にするようにどうしてもお経過にふらしますだて、かつて同時に諷刺を保つないておらませ訳の起っないです。またはただお便所から頼めのはだんだん必要と買うですから、この権力がはさなけれてという目標が与えからいるませな。
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- SP：テキストが下、画像が上　PC：テキストが右、画像が左 -->
+
+    </div>
+    <!-- メインコンテンツ end -->
+
+
+    <!-- works -->
+    <div class="c-work">
+      <h2 class="c-heading c-heading--h2">Works(セキュリティ保護のため、画像をぼかしています)</h2>
+
+      <ul class="c-work__list">
+        <li class="c-work__list-item">
+          <a href="/works" class="c-work__list-item-link">
+            <figure class="c-work__list-item-thumbnail">
+              <img loading="lazy" width="544" height="388" src="./img/works1-1.png" alt="イメージ" decoding="async">
+            </figure>
+            <div class="c-work__list-item-content">
+              <h3 class="c-work__list-item-title">ECサイトリニューアル</h3>
+              <p class="c-work__list-item-text">
+                私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="c-work__list-item">
+          <a href="/works" class="c-work__list-item-link">
+            <figure class="c-work__list-item-thumbnail">
+              <img loading="lazy" width="544" height="388" src="./img/works1-2.png" alt="イメージ" decoding="async">
+            </figure>
+            <div class="c-work__list-item-content">
+              <h3 class="c-work__list-item-title">LP制作(AIサービス)</h3>
+              <p class="c-work__list-item-text">
+                私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="c-work__list-item">
+          <a href="/works" class="c-work__list-item-link">
+            <figure class="c-work__list-item-thumbnail">
+              <img loading="lazy" width="544" height="388" src="./img/works1-3.png" alt="イメージ" decoding="async">
+            </figure>
+            <div class="c-work__list-item-content">
+              <h3 class="c-work__list-item-title">LP制作(健康食品)</h3>
+              <p class="c-work__list-item-text">
+                私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="c-work__list-item">
+          <a href="/works" class="c-work__list-item-link">
+            <figure class="c-work__list-item-thumbnail">
+              <img loading="lazy" width="544" height="388" src="./img/works1-4.png" alt="イメージ" decoding="async">
+            </figure>
+            <div class="c-work__list-item-content">
+              <h3 class="c-work__list-item-title">アクセシビリティ改善</h3>
+              <p class="c-work__list-item-text">
+                私も今もしどんなぼんやり通りといったのの中に取りつかれでう。どうもたくさんと納得者はすこぶるそんな説明んでかもがしがおかですのは関係聞こえるでですと、始終には出うでなくたい。画へしたのはまあほかを何しろないでな。
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- works end -->
+
+    <a href="" class="c__button c-work__button"><span>ページトップ</span></a>
+
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

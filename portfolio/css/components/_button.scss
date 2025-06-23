@@ -1,0 +1,142 @@
+.c__button {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  background: transparent;
+  outline: none;
+  transition: all 0.3s ease-out;
+  max-width: 61.3vw;
+  width: 100%;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 1.06vw;
+    left: 1.06vw;
+    width: 100%;
+    height: 100%;
+    border: solid 0.26vw #303030;
+    transition: all 0.2s ease-out;
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    & span {
+      transform: translateY(0.25vw) translateX(0.25vw);
+    }
+
+    &::before {
+      top: 1.06vw;
+      left: 1.06vw;
+    }
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 5.33vw 0;
+    font-size: 3.73vw;
+    background: #fff;
+    color: #303030;
+    transition: all 0.2s ease-out;
+    border: solid 0.26vw #303030;
+  }
+}
+
+@media screen and (min-width:501px) {
+  .c-button {
+    max-width: 306.5px;
+
+    &::before {
+      top: 5.3px;
+      left: 5.3px;
+      border: solid 0.26vw #303030;
+    }
+
+    &:hover {
+
+      &::before {
+        top: 5.3px;
+        left: 5.3px;
+      }
+    }
+
+    span {
+      padding: 26.65px 0;
+      font-size: 18.65px;
+      border: solid 1.3px #303030;
+    }
+  }
+
+}
+
+@media screen and (min-width:851px) {
+  .c__button {
+    max-width: 19.1vw;
+
+    &::before {
+      top: 0.33vw;
+      left: 0.33vw;
+      width: 100%;
+      height: 100%;
+      border: solid 0.08vw #303030;
+    }
+
+
+    &:hover {
+
+      &::before {
+        top: 0.25vw;
+        left: 0.25vw;
+      }
+    }
+
+    span {
+      padding: 1.66vw 0;
+      font-size: 1.16vw;
+      transition: all 0.2s ease-out;
+      border: solid 0.08vw #303030;
+    }
+  }
+}
+
+
+@media screen and (min-width:1201px) {
+  .c__button {
+    max-width: 230px;
+
+
+    &::before {
+      content: "";
+      top: 4px;
+      left: 4px;
+      border: solid 1px #303030;
+      transition: all 0.2s ease-out;
+    }
+
+
+    &:hover {
+      & span {
+        transform: translateY(3px) translateX(3px);
+      }
+
+
+      &::before {
+        top: 3px;
+        left: 3px;
+      }
+    }
+
+
+    span {
+      padding: 20px 0;
+      font-size: 14px;
+      border: solid 1px #303030;
+    }
+  }
+}
