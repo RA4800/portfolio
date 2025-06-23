@@ -1,8 +1,3 @@
-/* -------------------------------------------------- */
-/* 1. モバイルファースト (デフォルト) - vw を使用 */
-/* -------------------------------------------------- */
-
-/* モーダル全体のスタイル */
 .modal {
     display: flex;
     position: fixed;
@@ -22,42 +17,38 @@
     -webkit-backdrop-filter: blur(5px);
 }
 
-/* モーダル表示時に適用されるクラス */
 .modal.is-active {
     opacity: 1;
     visibility: visible;
 }
 
-/* モーダルの内容部分 */
 .modal-content {
     background-color: #ffffff;
-    padding: 6vw; /* vwに調整 */
-    border-radius: 3vw; /* vwに調整 */
-    box-shadow: 0 4vw 12vw rgba(0, 0, 0, 0.25); /* vwに調整 */
-    width: 90vw; /* vwに調整 */
-    max-width: 90vw; /* モバイルでは最大幅もvwで */
+    padding: 6vw;
+    border-radius: 3vw;
+    box-shadow: 0 4vw 12vw rgba(0, 0, 0, 0.25);
+    width: 90vw;
+    max-width: 90vw;
     position: relative;
-    transform: translateY(4vw); /* vwに調整 */
+    transform: translateY(4vw);
     transition: transform 0.3s ease-out;
     box-sizing: border-box;
     overflow-y: auto;
     max-height: 90vh;
 }
 
-/* モーダル表示時、コンテンツを元の位置に戻す */
 .modal.is-active .modal-content {
     transform: translateY(0);
 }
 
-/* モーダルの閉じるボタン */
 .close-button {
     color: #888;
-    font-size: 7vw; /* vwに調整 */
+    font-size: 7vw;
     font-weight: normal;
     cursor: pointer;
     position: absolute;
-    top: 3vw; /* vwに調整 */
-    right: 4vw; /* vwに調整 */
+    top: 3vw;
+    right: 4vw;
     transition: color 0.2s ease-in-out;
     line-height: 1;
 }
@@ -67,46 +58,39 @@
     color: #333;
 }
 
-/* モーダル内の画像スタイル */
 .modal-content img {
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 2vw; /* vwに調整 */
-    margin: 0 auto 5vw auto; /* vwに調整 */
-    box-shadow: 0 1.5vw 6vw rgba(0, 0, 0, 0.1); /* vwに調整 */
+    border-radius: 2vw;
+    margin: 0 auto 5vw auto;
+    box-shadow: 0 1.5vw 6vw rgba(0, 0, 0, 0.1);
 }
 
-/* モーダル内のタイトルスタイル */
 .modal-content h2 {
     color: #2c3e50;
-    font-size: 5.5vw; /* vwに調整 */
-    margin-bottom: 4vw; /* vwに調整 */
+    font-size: 5.5vw;
+    margin-bottom: 4vw;
     text-align: center;
     border-bottom: 2px solid #eceff1;
-    padding-bottom: 3vw; /* vwに調整 */
+    padding-bottom: 3vw;
 }
 
-/* モーダル内のテキストスタイル */
 .modal-content p {
     color: #34495e;
     line-height: 1.7;
-    font-size: 3.5vw; /* vwに調整 */
+    font-size: 3.5vw;
     text-align: justify;
-    margin-bottom: 2vw; /* vwに調整 */
+    margin-bottom: 2vw;
 }
 
-
-/* -------------------------------------------------- */
-/* 2. min-width: 501px - px を使用 */
-/* -------------------------------------------------- */
 @media screen and (min-width: 501px) {
     .modal-content {
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
         width: 90%;
-        max-width: 600px; /* pxに固定 */
+        max-width: 600px;
         transform: translateY(20px);
     }
 
@@ -123,89 +107,81 @@
     }
 
     .modal-content h2 {
-        font-size: 2.2em; /* emで固定（親要素のfont-sizeに依存） */
+        font-size: 2.2em;
         margin-bottom: 20px;
         padding-bottom: 15px;
     }
 
     .modal-content p {
-        font-size: 1.1em; /* emで固定 */
+        font-size: 1.1em;
         margin-bottom: 10px;
     }
 }
 
-
-/* -------------------------------------------------- */
-/* 3. min-width: 851px - vw を使用 */
-/* -------------------------------------------------- */
 @media screen and (min-width: 851px) {
     .modal-content {
-        padding: 3vw; /* vwに調整 */
-        border-radius: 1.2vw; /* vwに調整 */
-        box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.25); /* vwに調整 */
-        width: 80vw; /* vwに調整 */
-        max-width: 80vw; /* vwに調整 */
-        transform: translateY(2vw); /* vwに調整 */
+        padding: 3vw;
+        border-radius: 1.2vw;
+        box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.25);
+        width: 80vw;
+        max-width: 80vw;
+        transform: translateY(2vw);
     }
 
     .close-button {
-        font-size: 3.6vw; /* vwに調整 */
-        top: 1.5vw; /* vwに調整 */
-        right: 2vw; /* vwに調整 */
+        font-size: 3.6vw;
+        top: 1.5vw;
+        right: 2vw;
     }
 
     .modal-content img {
-        border-radius: 0.8vw; /* vwに調整 */
-        margin: 0 auto 2.5vw auto; /* vwに調整 */
-        box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.1); /* vwに調整 */
+        border-radius: 0.8vw;
+        margin: 0 auto 2.5vw auto;
+        box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.1);
     }
 
     .modal-content h2 {
-        font-size: 2.2vw; /* vwに調整 */
-        margin-bottom: 2vw; /* vwに調整 */
-        padding-bottom: 1.5vw; /* vwに調整 */
+        font-size: 2.2vw;
+        margin-bottom: 2vw;
+        padding-bottom: 1.5vw;
     }
 
     .modal-content p {
-        font-size: 1.1vw; /* vwに調整 */
-        margin-bottom: 1vw; /* vwに調整 */
+        font-size: 1.1vw;
+        margin-bottom: 1vw;
     }
 }
 
-
-/* -------------------------------------------------- */
-/* 4. min-width: 1201px - px を使用 */
-/* -------------------------------------------------- */
 @media screen and (min-width: 1201px) {
     .modal-content {
-        padding: 40px; /* pxに固定 */
-        border-radius: 15px; /* pxに固定 */
-        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3); /* pxに固定 */
-        width: 700px; /* pxに固定 */
-        max-width: 800px; /* pxに固定 */
-        transform: translateY(25px); /* pxに固定 */
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        width: 700px;
+        max-width: 800px;
+        transform: translateY(25px);
     }
 
     .close-button {
-        font-size: 40px; /* pxに固定 */
-        top: 20px; /* pxに固定 */
-        right: 25px; /* pxに固定 */
+        font-size: 40px;
+        top: 20px;
+        right: 25px;
     }
 
     .modal-content img {
-        border-radius: 10px; /* pxに固定 */
-        margin: 0 auto 30px auto; /* pxに固定 */
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* pxに固定 */
+        border-radius: 10px;
+        margin: 0 auto 30px auto;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     }
 
     .modal-content h2 {
-        font-size: 2.5em; /* emで固定 */
+        font-size: 2.5em;
         margin-bottom: 25px;
         padding-bottom: 20px;
     }
 
     .modal-content p {
-        font-size: 1.2em; /* emで固定 */
+        font-size: 1.2em;
         margin-bottom: 15px;
     }
 }

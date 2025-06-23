@@ -5,6 +5,8 @@
 
   &__asterisk {
     text-align: center;
+    max-width: 87.2vw;
+    margin: 0 auto;
   }
 
 
@@ -97,6 +99,10 @@
   .c-work {
     gap: 42.65px;
 
+    &__asterisk {
+      max-width: 436px;
+    }
+
     &__list {
       max-width: 436px;
       gap: 21.3px;
@@ -140,6 +146,9 @@
     flex-direction: column;
     gap: 3.33vw;
 
+    &__asterisk {
+      max-width: 96.6vw;
+    }
 
     &__list {
       display: flex;
@@ -190,6 +199,9 @@
   .c-work {
     gap: 40px;
 
+    &__asterisk {
+      max-width: 1160px;
+    }
 
     &__list {
       max-width: 1160px;
